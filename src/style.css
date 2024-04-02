@@ -1,0 +1,155 @@
+:root {
+	--primary-color: #f1fa8c;
+	--secondary-color: #333333;
+	--tertiary-color: #ffffff;
+	--quaternary-color: #666666;
+	--quinary-color: #f1fa8c;
+	--senary-color: #f1fa8c;
+	--septenary-color: #f1fa8c;
+	--octonary-color: #f1fa8c;
+	--nonary-color: #f1fa8c;
+	--denary-color: #f1fa8c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--secondary-color);
+	color: var(--tertiary-color);
+}
+
+.presentation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+}
+
+#profile_picture {
+
+	border-radius: 100%;
+	border: solid 5px var(--primary-color);
+	width: 350px;
+	height: 350px;
+	overflow: hidden;
+}
+
+#profile_picture img {
+	width: 350px;
+}
+
+#name_grade {
+	margin-top: 20px;
+}
+
+#name {
+	font-size: 40px;
+	color: var(--primary-color);
+}
+
+#grade {
+	font-size: 20px;
+	color: var(--tertiary-color);
+}
+
+.btn_contact {
+
+	background-color: var(--primary-color);
+	margin: 20px 10px 10px 10px;
+	padding: 10px 10px;
+	border: solid 2px var(--primary-color);
+	border-radius: 20px;
+	transition: transform 0.3s ease;
+}
+
+.btn_contact img {
+	
+	width: 50px;
+	height: 50px;
+}
+
+.btn_contact:hover {
+
+	transform: scale(1.4);
+	transition: transform 0.3s ease;
+}
+
+.about_me {
+	align-items: normal;
+	text-align: left;
+	background-color: var(--quaternary-color);
+}
+
+#about_me_text {
+	
+	color: var(--primary-color);
+	margin: 0px 20px;
+
+	font-size: 100px;
+	font-style: italic;
+}
+
+.about_me div p {
+
+	color: var(--secondary-color);
+	margin: 30px 20px;
+	font-size: 30px;
+}
+
+#projects_title {
+	color: var(--primary-color);
+	font-size: 80px;
+	margin-bottom: 100px;
+}
+
+#project_tile {
+	display: inline-block;
+	flex-direction: row;
+	background-color: white;
+	color: black;
+	margin-top: 20px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#tools_box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.use_tools {
+	background-color: var(--quaternary-color);
+	color: var(--secondary-color);
+}
+
+.tools {
+	width: 100px;
+	height: 100px;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+
+.tools img {
+	width: 50%;
+	transition: transform 0.3s ease;
+}
+
+.tools img:hover {
+	width: 50%;
+	transition: transform 0.3s ease;
+	transform: scale(1.5);
+}
+
+.tool_text {
+
+	margin: 0 auto;
+	padding-top: 7px;
+	font-size: 1em;
+}

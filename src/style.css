@@ -1,155 +1,197 @@
+/* ESTILOS POR DEFECTO */
+
 :root {
-	--primary-color: #f1fa8c;
-	--secondary-color: #333333;
-	--tertiary-color: #ffffff;
-	--quaternary-color: #666666;
-	--quinary-color: #f1fa8c;
-	--senary-color: #f1fa8c;
-	--septenary-color: #f1fa8c;
-	--octonary-color: #f1fa8c;
-	--nonary-color: #f1fa8c;
-	--denary-color: #f1fa8c;
+	--fondo: #222222;
+	--titulos: #ffffff;
+	--textos: #rgba( 255, 255, 255, 0.5 );
 }
 
-* {
+html {
+	font-family: Menlo, Monaco, Lucida Console, 'Courier New', Courier, monospace;
+	background-color: #fff;
+	letter-spacing: -0.025rem;
+}
+
+body, figure {
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	background-color: var(--secondary-color);
-	color: var(--tertiary-color);
+a {
+	text-decoration: none;
 }
 
-.presentation {
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+	color: #222222;
+	font-size: .9rem;
+	line-height: 1.5;
+	margin: 0;
+	text-wrap: pretty;
+}
+
+/* ------------------------------------- */
+
+/* ESTILOS PRESENTACION */
+
+main {
+	padding: 4rem;
+	margin: auto;
+	width: 100%;
+}
+
+section {
+	max-width: 700px;
+	margin: 0 auto 72px;
+}
+
+.title_section {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 8px;
+}
+
+.container {
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.info {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	height: 100vh;
-}
-
-#profile_picture {
-
-	border-radius: 100%;
-	border: solid 5px var(--primary-color);
-	width: 350px;
-	height: 350px;
-	overflow: hidden;
-}
-
-#profile_picture img {
-	width: 350px;
-}
-
-#name_grade {
-	margin-top: 20px;
+	gap: 0.5rem;
+	padding-right: 32px;
 }
 
 #name {
-	font-size: 40px;
-	color: var(--primary-color);
+	font-size: 2rem;
 }
 
 #grade {
-	font-size: 20px;
-	color: var(--tertiary-color);
+	color: #444;
+	font-weight: 500;
+	font-size: 1.1rem;
+	text-wrap: balance;
 }
 
-.btn_contact {
-
-	background-color: var(--primary-color);
-	margin: 20px 10px 10px 10px;
-	padding: 10px 10px;
-	border: solid 2px var(--primary-color);
-	border-radius: 20px;
-	transition: transform 0.3s ease;
-}
-
-.btn_contact img {
-	
-	width: 50px;
-	height: 50px;
-}
-
-.btn_contact:hover {
-
-	transform: scale(1.4);
-	transition: transform 0.3s ease;
-}
-
-.about_me {
-	align-items: normal;
-	text-align: left;
-	background-color: var(--quaternary-color);
-}
-
-#about_me_text {
-	
-	color: var(--primary-color);
-	margin: 0px 20px;
-
-	font-size: 100px;
-	font-style: italic;
-}
-
-.about_me div p {
-
-	color: var(--secondary-color);
-	margin: 30px 20px;
-	font-size: 30px;
-}
-
-#projects_title {
-	color: var(--primary-color);
-	font-size: 80px;
-	margin-bottom: 100px;
-}
-
-#project_tile {
-	display: inline-block;
-	flex-direction: row;
-	background-color: white;
-	color: black;
-	margin-top: 20px;
-	padding: 20px;
-	border-radius: 5px;
-}
-
-#tools_box {
+#city {
+	color: #666;
 	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	font-size: .85rem;
+	letter-spacing: -0.05rem;
+}
+
+#contact_icons {
+	color: #555;
+	font-size: 0.65rem;
+	display: flex;
+	gap: 4px;
+	margin-top: 8px;
+}
+
+#contact_icons a {
+
+	color: #777;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #eee;
+	padding: 4px;
+	height: 32px;
+	width: 32px;
+	border-radius: 6px;
+	transition: all 0.3s ease; 
+}
+
+#contact_icons a:hover {
+	background: #eee;
+	border: 1px solid #ccc;
+}
+
+img {
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	width: 128px;
+	border-radius: 16px;
+}
+
+/* ------------------------------------- */
+
+/* ESTILOS EDUCACION */
+
+#education {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.education_box {
+	font-weight: 500;
+	color: #111;
+}
+
+.education_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 4px;
+}
+
+.education_time {
+	color: #555;
+	font-size: 0.85rem;
+	padding-top: 4px;
+	min-width: 102px;
+}
+
+/* ------------------------------------- */
+
+/* ESTILOS HERRAMIENTAS */
+
+#tools {
+
+	display: inline-flex;
+	gap: 8px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.use_tools {
-	background-color: var(--quaternary-color);
-	color: var(--secondary-color);
-}
-
-.tools {
-	width: 100px;
-	height: 100px;
+#tool {
 	align-items: center;
-	justify-content: center;
-	margin: 10px;
+	background: #eee;
+	border-radius: 6px;
+	color: black;
+	display: flex;
+	font-size: 0.8rem;
+	font-weight: 500;
+	gap: 4px;
+	padding: 0.2rem 0.6rem;
 }
 
-.tools img {
-	width: 50%;
-	transition: transform 0.3s ease;
+#tool img {
+	width: 26px;
+	height: 26px;
 }
 
-.tools img:hover {
-	width: 50%;
-	transition: transform 0.3s ease;
-	transform: scale(1.5);
-}
-
-.tool_text {
-
-	margin: 0 auto;
-	padding-top: 7px;
-	font-size: 1em;
-}
+/* ------------------------------------- */

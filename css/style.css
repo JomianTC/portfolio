@@ -147,11 +147,12 @@ section {
 	border: 1px solid #ccc;
 }
 
-img {
+figure img {
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	width: 128px;
 	border-radius: 16px;
+	rotate: 90deg;
 }
 
 @media (width <=700px) {

@@ -68,7 +68,7 @@ main {
 
 section {
 	max-width: 700px;
-	margin: 0 auto 72px;
+	margin: 0 auto 45px;
 }
 
 @media (width <=700px) {
@@ -152,7 +152,6 @@ figure img {
 	object-fit: cover;
 	width: 128px;
 	border-radius: 16px;
-	rotate: 90deg;
 }
 
 @media (width <=700px) {
@@ -275,6 +274,45 @@ figure img {
 		border: none;
 		box-shadow: 0 1px 1px #f2f2f2;
 		padding: 0 0 16px 0;
+	}
+}
+
+/* ------------------------------------- */
+
+/* ESTILOS EXPERIENCIA */
+
+#experience {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.experience_box {
+	font-weight: 500;
+	color: #111;
+}
+
+.experience_box_alt {
+	font-weight: 400;
+	color: #222;
+}
+
+.experience_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 4px;
+}
+
+.experience_time {
+	color: #555;
+	font-size: 0.85rem;
+	min-width: 102px;
+}
+
+@media (width <=700px) {
+	.experience_time {
+		text-align: right;
 	}
 }
 

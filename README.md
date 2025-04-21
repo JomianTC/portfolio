@@ -1,4 +1,7 @@
 <div align="center">
+
+<a><img src="assets/JomianTCLogo.png" width="150"/></a>
+
 <h2>
     <em>Porfolio</em> personal minimalista para web
 </h2>
